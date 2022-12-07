@@ -1,0 +1,45 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: rgb(88, 82, 82);
+  }
+  
+  td, th {
+    border: 2px solid #0f0f0f;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #1b1479;
+  }
+
+  .dropdown-menu {
+    height: 300px;
+    overflow-y: scroll;
+  }
+
+  .my-custom-scrollbar {
+    position: relative;
+    height: 500px;
+    overflow: scroll;
+    }
+  .table-wrapper-scroll-y {
+    display: block;
+  }
+
+
+
+  .table-fixed tbody{
+      height:400px;
+      overflow-y:scroll;
+      }
+  .table-fixed tbody, thead{
+      display:block;
+    }
+    
+
+
+  
+  
