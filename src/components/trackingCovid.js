@@ -15,7 +15,7 @@ class Covid extends React.Component {
     }
 
     handleChangeCountry = (cou) => {
-        // console.log(">>check Click", cou.Slug);
+        console.log(">>check Click", cou.Slug);
         this.setState({
             country: cou.Slug
         })
@@ -23,7 +23,7 @@ class Covid extends React.Component {
 
     componentDidUpdate(prevProps, prevState) {
         if (prevState.country !== this.state.country) {
-            // console.log(">>check diff");
+            console.log(">>check diff");
             this.setState({ loading: true });
             this.componentDidMount();
         }
@@ -31,7 +31,7 @@ class Covid extends React.Component {
 
     componentDidMount() {
         setTimeout(async () => {
-            // console.log(">>>>timeout");
+            console.log(">>>>timeout");
             let covi = await axios.get(`https://api.covid19api.com/dayone/country/${this.state.country}`);
             let country = await axios.get('https://api.covid19api.com/countries');
             this.setState({
@@ -39,20 +39,20 @@ class Covid extends React.Component {
                 listCountry: country.data,
                 loading: false
             });
-            // console.log(">>check didmount", this.state);
+            console.log(">>check didmount", this.state);
         }, 3000);
     }
 
     render() {
         let { listCovid } = this.state;
         let { listCountry } = this.state;
-        // console.log(">>>check data: ", this.state);
-        // console.log(">>check country: ", this.state.country);
+        console.log(">>>check data: ", this.state);
+        console.log(">>check country: ", this.state.country);
         return (
             <div>
 
                 {/* className="table-wrapper-scroll-y my-custom-scrollbar" */}
-                <table className="table table-fixed">
+                <table className="table-wrapper-scroll-y my-custom-scrollbar">
                     <thead>
                         <tr>
                             <th colSpan={6}>

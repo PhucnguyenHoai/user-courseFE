@@ -1,45 +1,30 @@
 table {
+
+    color: #0f0f0f;
     font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-    background-color: rgb(88, 82, 82);
+    background-color: rgb(248, 244, 244);
   }
   
   td, th {
-    border: 2px solid #0f0f0f;
-    text-align: left;
+    text-align: center;
     padding: 8px;
   }
   
   tr:nth-child(even) {
-    background-color: #1b1479;
+    background-color: grey;
   }
-
   .dropdown-menu {
     height: 300px;
     overflow-y: scroll;
+    border: 2px #0f0f0f;
   }
 
   .my-custom-scrollbar {
+    border: 5px solid #0f0f0f;
     position: relative;
-    height: 500px;
-    overflow: scroll;
+    height: 470px;
+    overflow-y: scroll;
     }
   .table-wrapper-scroll-y {
     display: block;
   }
-
-
-
-  .table-fixed tbody{
-      height:400px;
-      overflow-y:scroll;
-      }
-  .table-fixed tbody, thead{
-      display:block;
-    }
-    
-
-
-  
-  

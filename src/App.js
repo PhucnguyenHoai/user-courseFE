@@ -4,6 +4,7 @@ import Covid from './components/trackingCovid'
 import Nav from './Nav/Navigation';
 import Home from './components/Home';
 import { Switch, Route } from "react-router-dom";
+import Course from './components/userCourse';
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
           </Route>
           <Route path='/covid'>
             <Covid />
+          </Route>
+          <Route path='/course'>
+            <Course />
           </Route>
         </Switch>
       </header>
